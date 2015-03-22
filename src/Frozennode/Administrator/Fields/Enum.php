@@ -30,7 +30,7 @@ class Enum extends Field {
 		foreach ($dataOptions as $val => $text)
 		{
 			$options['options'][] = array(
-				'id' => is_numeric($val) ? $text : $val,
+				'id' => is_int($val) ? $text : $val,
 				'text' => $text,
 			);
 		}
