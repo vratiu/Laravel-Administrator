@@ -1,6 +1,6 @@
 {
-	"name": "frozennode/administrator",
-	"description": "A database interface package for Laravel",
+	"name": "vratiu/laravel-administrator",
+	"description": "A database interface package for Laravel forked by vratiu",
 	"homepage": "http://administrator.frozennode.com",
 	"keywords": ["administrator", "admin", "database", "laravel-administrator", "laravel", "cms"],
 	"license": "MIT",
