@@ -56,6 +56,11 @@ class Time extends Field {
 
 			if ($time !== false)
 			{
+                //inclusion hack
+                if ($this->getOption('type') === 'date'){
+                    $time->setTime(23, 59, 59);
+                    $this->userOptions['type'] = 'datetime';
+                }
 				$query->where($model->getTable().'.'.$this->getOption('field_name'), '<=', $this->getDateString($time));
 			}
 		}
